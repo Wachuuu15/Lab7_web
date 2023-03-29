@@ -1,0 +1,24 @@
+{
+  "name": "lab7_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wachuuu15/Lab7_web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wachuuu15/Lab7_web/issues"
+  },
+  "homepage": "https://github.com/Wachuuu15/Lab7_web#readme",
+  "dependencies": {
+    "webpack-cli": "^5.0.1"
+  }
+}

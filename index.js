@@ -1,3 +1,4 @@
+
 // Crear el encabezado H1
 const newHeading = document.createElement('h1');
 newHeading.style.color = 'white';
