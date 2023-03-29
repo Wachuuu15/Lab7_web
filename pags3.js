@@ -62,15 +62,41 @@ div.appendChild(article2);
 // Creamos un elemento article para la tercera película y lo agregamos al div
 const article3 = document.createElement("article");
 const h2_3 = document.createElement("h2");
-h2_2.textContent = "Si tuviera 30";
+h2_3.textContent = "Si tuviera 30";
 const p3 = document.createElement("p");
-p3.textContent = "Orgullo y prejuicio es una película británica del año 2005 del género romántico basada en la novela homónima de Jane Austen publicada en 1813. La película, basada en un guion de Deborah Moggach, fue producida por Working Title Films y dirigida por Joe Wright. En la Inglaterra de finales del siglo XVIII, los Bennett buscan marido para sus hijas. Lo que en un principio parece un bonito romance entre Lizzie, la hermana mayor, y el señor Darcy, un acaudalado joven que acaba de mudarse a la mansión vecina, acaba convirtiéndose en una batalla de sexos.";
+p3.textContent = "Por su trece cumpleaños, todo lo que Jenna Rink desea es ser guapa y popular. Tras una experiencia humillante con un grupo de chicas delante del chico más popular de la escuela, Jenna hace un deseo desesperado por tener una nueva vida. Milagrosamente su deseo se hace realidad, sólo que han pasado diecisiete años y ella es una niña de trece años en el cuerpo de una joven de treinta.";
 const img3 = document.createElement("img");
-img3.setAttribute("src", "prejuicio.jpg");
+img3.setAttribute("src", "30.jpg");
 img3.setAttribute("width", "290");
 img3.setAttribute("height", "450");
 img2.style.textAlign = "center";
-article2.appendChild(h2_3);
-article2.appendChild(p3);
-article2.appendChild(img3);
-div.appendChild(article2);
+article3.appendChild(h2_3);
+article3.appendChild(p3);
+article3.appendChild(img3);
+div.appendChild(article3);
+
+// crear el elemento div
+const div2 = document.createElement("div");
+
+// crear el enlace para la página siguiente
+const nextLink = document.createElement("a");
+nextLink.href = "pags5.html";
+
+// crear el div para el enlace siguiente y añadir el enlace
+const nextDiv = document.createElement("div");
+nextDiv.style.textAlign = "right";
+nextDiv.appendChild(nextLink);
+
+// crear el enlace para la página anterior
+const prevLink = document.createElement("a");
+prevLink.href = "pags2.html";
+prevLink.innerHTML = "<h2><b>Anterior</b></h2>";
+
+// crear el div para el enlace anterior y añadir el enlace
+const prevDiv = document.createElement("div");
+prevDiv.style.textAlign = "left";
+prevDiv.appendChild(prevLink);
+
+// añadir ambos divs al div principal
+div.appendChild(nextDiv);
+div.appendChild(prevDiv);
