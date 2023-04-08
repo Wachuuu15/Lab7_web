@@ -14,8 +14,8 @@ module.exports = {
     pag3:'./src/pags3.js'
 },
   output: {
-    path: path.resolve(__dirname, 'dist_webpack'),
-    filename: 'js [name].bundle.js',
+    path: path.resolve(__dirname, 'dist_webpack_babel'),
+    filename: '[name].bundle.js',
   },
 
   plugins: [
@@ -68,6 +68,14 @@ module.exports = {
           // Compiles Sass to CSS
           "sass-loader",
         ]
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        
+        }
       }
       
     ],

@@ -2,6 +2,7 @@ const heading = document.createElement('h1');
 heading.textContent = 'SOBRE MÍ';
 heading.style.textAlign = 'center';
 
+
 const div1 = document.createElement('div');
 div1.style.textAlign = 'center';
 
@@ -53,4 +54,5 @@ div2.appendChild(link);
 document.body.appendChild(div2);
 // Agregar los elementos al documento
 document.body.style.backgroundImage = 'url("Fondo de celular gatito.jpg")';
+
 
