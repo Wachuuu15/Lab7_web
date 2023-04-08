@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack"
+    "start": "webpack",
+    "begin": "babel src --out-dir dist_babel --watch"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,14 @@
   "homepage": "https://github.com/Wachuuu15/Lab7_web#readme",
   "dependencies": {
     "webpack-cli": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/plugin-transform-arrow-functions": "^7.20.7",
+    "@babel/polyfill": "^7.12.1",
+    "babel-loader": "^9.1.2",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.5"
   }
 }
